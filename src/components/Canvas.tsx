@@ -24,6 +24,7 @@ export default function Canvas({points}: CanvasType) {
         })
         const offsets = distanceVals.map((dist) => {
           if (dist > 220) return null
+          //damping
           return dist / 100
         })
         
